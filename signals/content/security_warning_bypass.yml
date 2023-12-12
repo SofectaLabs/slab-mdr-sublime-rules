@@ -1,0 +1,8 @@
+name: "Security Warning Bypass"
+type: "query"
+source: | 
+  type.inbound
+  and regex.imatch(body.html.raw,".*\\sbody\\s*{[^}]+display:\\s+none.*?}.*") and regex.imatch(body.html.raw,".*display:\\sblock.*")
+severity: "high"
+tags:
+  - "Security header bypass"
