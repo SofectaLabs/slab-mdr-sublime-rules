@@ -1,4 +1,4 @@
-name: "Security Warning Bypass)"
+name: "Security Warning Bypass"
 description: "Detects messages using HTML/CSS to obfuscate or remove security warning headers."
 type: "rule"
 severity: "high"
