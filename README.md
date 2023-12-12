@@ -6,9 +6,7 @@ This repo contains open-source rules for [Sublime](https://github.com/sublime-se
 
 Examples
 ----------
-- [Security Warning Bypass](https://github.com/sofectalabs/slab-sublime-detection-rules/sublime-rules/search?q=html+smuggling)
-
-- [Encrypted zips](https://github.com/sofectalabs/slab-mdr-sublime-rules/blob/main/detection-rules/body_security_warning_bypass.yml)
+- [Security Warning Bypass](https://github.com/sofectalabs/slab-mdr-sublime-rules/blob/main/detection-rules/body_security_warning_bypass.yml)
 
 Other Community Rule Feeds
 ----------
