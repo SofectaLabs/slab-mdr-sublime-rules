@@ -1,4 +1,4 @@
-name: "Securuty Warning Bypass"
+name: "Security Warning Bypass"
 type: "query"
 source: | 
   type.inbound
