@@ -1,0 +1,26 @@
+name: "Phishing: Scattered Spider Approaching"
+description: |
+  Brace yourself Scattered Spider is coming for you, maybe. Intrusions often begin with broad phishing [T1566] and smishing [T1660] attempts against a target using victim-specific crafted domains, such as the domains listed in Table 3 [T1583.001].
+type: "rule"
+severity: "high"
+authors:
+  - twitter: "affje0x65"
+references:
+  - https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-320a
+  - https://www.silentpush.com/blog/scattered-spider
+source: |
+    type.inbound
+    and any(body.links,
+           //old: regex.icontains(.href_url.url, '/\b[a-zA-Z0-9]+-(sso|servicedesk|okta)\.(com|co|net|us|help)\b/g')
+           regex.icontains(.href_url.url, '/([a-zA-Z([a-zA-Z0-9]+(-|)ss(o|p)|(o|p)(-|)[a-zA-Z([a-zA-Z0-9]+)\.(com|co|net|us|help)/g')
+           or regex.icontains(.href_url.url, '/([a-zA-Z([a-zA-Z0-9]+(-|)okta|okta(-|)[a-zA-Z([a-zA-Z0-9]+)\.(com|co|net|us|help)/g')
+           or regex.icontains(.href_url.url, '/([a-zA-Z([a-zA-Z0-9]+(-|)h(e|1)lp(|desk|now)|h(e|1)lp(|desk|now)(-|)[a-zA-Z([a-zA-Z0-9]+)\.(com|co|net|us|help)/g')
+           ) 
+  
+attack_types:
+  - "Credential Phishing"
+tactics_and_techniques:
+  - "Social engineering"
+detection_methods:
+  - "URL analysis"
+  - "Sender analysis"
