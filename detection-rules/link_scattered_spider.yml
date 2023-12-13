@@ -4,7 +4,7 @@ description: |
 type: "rule"
 severity: "high"
 authors:
-  - twitter: "affje0x65"
+  - twitter: "khalavak"
 references:
   - https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-320a
   - https://www.silentpush.com/blog/scattered-spider

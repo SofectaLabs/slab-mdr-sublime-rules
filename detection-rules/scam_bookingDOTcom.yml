@@ -4,7 +4,7 @@ description: |
 type: "rule"
 severity: "low"
 authors:
-  - twitter: "affje0x65"
+  - twitter: "khalavak"
 references:
   - internal
 source: |

@@ -4,7 +4,7 @@ description: |
 type: "rule"
 severity: "high"
 authors:
-  - twitter: "affje0x65"
+  - twitter: "khalavak"
 references:
   - https://twitter.com/spamhaus/status/1722667197892317314
 source: |
