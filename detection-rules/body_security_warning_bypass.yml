@@ -2,6 +2,8 @@ name: "Security Warning Bypass"
 description: "Detects messages using HTML/CSS to obfuscate or remove security warning headers."
 type: "rule"
 severity: "high"
+authors:
+  - twitter: "khalavak"
 source: |
   type.inbound
   and regex.imatch(body.html.raw,".*\\sbody\\s*{[^}]+display:\\s+none.*?}.*") and regex.imatch(body.html.raw,".*display:\\sblock.*")
