@@ -15,8 +15,9 @@ source: |
            regex.icontains(.href_url.url, '/([a-zA-Z([a-zA-Z0-9]+(-|)ss(o|p)|(o|p)(-|)[a-zA-Z([a-zA-Z0-9]+)\.(com|co|net|us|help)/g')
            or regex.icontains(.href_url.url, '/([a-zA-Z([a-zA-Z0-9]+(-|)okta|okta(-|)[a-zA-Z([a-zA-Z0-9]+)\.(com|co|net|us|help)/g')
            or regex.icontains(.href_url.url, '/([a-zA-Z([a-zA-Z0-9]+(-|)h(e|1)lp(|desk|now)|h(e|1)lp(|desk|now)(-|)[a-zA-Z([a-zA-Z0-9]+)\.(com|co|net|us|help)/g')
-           ) 
-  
+           or regex.icontains(.href_urk.url, '/\w+[-]*(sso|okta|servicedesk|twilio|work|networks|help|my)\.\w+\b/g')
+          or regex.icontains(.href_urk.url, '/\b(sso|okta|servicedesk|twilio|work|networks|help|my)[-]*\w+\.\w+\b/g')
+           )
 attack_types:
   - "Credential Phishing"
 tactics_and_techniques:
