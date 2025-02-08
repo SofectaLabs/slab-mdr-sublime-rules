@@ -6,6 +6,7 @@ severity: "high"
 authors:
   - twitter: "khalavak"
 references:
+  - Internal Research
   - https://twitter.com/MsftSecIntel/status/1735351713907773711
 source: |
   type.inbound

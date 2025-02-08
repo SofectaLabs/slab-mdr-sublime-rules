@@ -6,6 +6,7 @@ severity: "high"
 authors:
   - twitter: "khalavak"
 references:
+  - Internal Research
   - https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-320a
   - https://www.silentpush.com/blog/scattered-spider
 source: |

@@ -6,6 +6,7 @@ severity: "high"
 authors:
   - twitter: "khalavak"
 references:
+  - Internal Research
   - https://twitter.com/spamhaus/status/1722667197892317314
 source: |
     type.inbound

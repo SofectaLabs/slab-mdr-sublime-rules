@@ -20,3 +20,4 @@ detection_methods:
   - "HTML analysis"
 references: 
   - "https://whynotsecurity.com/blog/external-email-warning-bypass/"
+  - Internal Research

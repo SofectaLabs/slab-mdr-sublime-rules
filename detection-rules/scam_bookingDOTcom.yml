@@ -6,7 +6,7 @@ severity: "low"
 authors:
   - twitter: "khalavak"
 references:
-  - internal
+  - Internal Research
 source: |
    type.inbound
    and sender.email.domain.domain == "booking.com"
