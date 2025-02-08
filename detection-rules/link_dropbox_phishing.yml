@@ -5,7 +5,6 @@ type: "rule"
 severity: "high"
 authors:
   - twitter: "khalavak"
-references:
 source: |
     type.inbound
     // allow for multiple Dropbox TLDs
