@@ -5,17 +5,8 @@ type: "rule"
 severity: "high"
 authors:
   - twitter: "khalavak"
-source: |
-    type.inbound
-    // allow for multiple Dropbox TLDs
-    and (
-        sender.email.domain.sld == "dropbox.com" or sender.email.email == "no-reply@dropbox.com"
-    )
-    and any(body.links,
-	    .href_url.domain.root_domain == "dropbox.com" and
-      .display_text =="View on Dropbox" 
-    )
-
+references:
+  - internal
 attack_types:
   - "Credential Phishing"
 tactics_and_techniques:
@@ -23,3 +14,13 @@ tactics_and_techniques:
 detection_methods:
   - "URL analysis"
   - "Sender analysis"
+source: |
+	type.inbound
+	// allow for multiple Dropbox TLDs
+	and (
+		sender.email.domain.sld == "dropbox.com" or sender.email.email == "no-reply@dropbox.com"
+	)
+	and any(body.links,
+		.href_url.domain.root_domain == "dropbox.com" and
+      		.display_text =="View on Dropbox" 
+    	)
